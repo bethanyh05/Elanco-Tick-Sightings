@@ -10,7 +10,7 @@ Search and Filtering.
 Data Reporting.  
 Error Handling.  
 
-Additional - short document explainig architecture decisions, how system consumes and presents data, things that could have been done better with more time.
+System should read and normalise dataset from an excel file quickly, changing the data to be appropriate data types. Allow users to be able to search and filter sightings, provide grouped insights about tick sightings and be able to handle any data inconsistencies
 
 Language used for backend - Python with a pandas library
 
