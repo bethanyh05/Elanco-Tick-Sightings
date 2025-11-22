@@ -5,10 +5,10 @@ Using data handling, processing pipelines, and analytics in a real-world context
 
 Focus:
 How data is consumed, processed and presented.
--Data Handling
--Search and Filtering
--Data Reporting
--Error Handling
+Data Handling
+Search and Filtering
+Data Reporting
+Error Handling
 
 Additional - short document explainig architecture decisions, how system consumes and presents data, things that could have been done better wiht more time.
 
