@@ -15,18 +15,12 @@ System should read and normalise dataset from an excel file quickly, changing th
 Language used for backend - Python with a pandas library
 
 To run code: Visual Studio Code Recommended  
-### Install Pandas  
+### Install 
   Check Python version installed  
   >python --version
   
   Check pip version installed  
   >pip --version
 
-  Install pandas  
-  >pip install pandas
- 
-  if on macOS/Linux  
-  >pip3 install pandas
-
-  (Optional) Upgrade to the latest version  
-  >pip install --upgrade pandas
+  Install libraries
+  >pip install pandas numpy statsmodels matplotlib scikit-learn
