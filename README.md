@@ -12,7 +12,7 @@ Error Handling.
 
 System should read and normalise dataset from an excel file quickly, changing the data to be appropriate data types. Allow users to be able to search and filter sightings, provide grouped insights about tick sightings and be able to handle any data inconsistencies
 
-Language used for backend - Python with a pandas library
+Language used for backend - Python
 
 To run code: Visual Studio Code Recommended  
 ### Install 
