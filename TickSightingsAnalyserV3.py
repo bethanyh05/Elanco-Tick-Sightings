@@ -1,10 +1,10 @@
 import pandas as pd
 from datetime import datetime
+# from prophet import Prophet - problem with prophet not working
+import matplotlib.pyplot as plt
 import numpy as np
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
-# from prophet import Prophet - problem with prophet not working 
-import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
+#from sklearn.cluster import KMeans
 from sklearn.linear_model import Ridge
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
@@ -12,10 +12,10 @@ from sklearn.pipeline import make_pipeline
 class TickSightingsAnalyser:
     def __init__(self, file_path: str): # save file path and call load_data
         self.file_path = file_path
-        self.df = self.load_data()
+        self.df = self._load_data()
         # frontend create api point (url) here and dataset resource_id
     
-    def fetch_tick_sightings(self) -> pd.DataFrame:
+    def _fetch_tick_sightings(self) -> pd.DataFrame:
         try:
             self.df = pd.read_excel(self.file_path)
             print(f"Loaded {len(self.df)} tick sightings")
@@ -24,8 +24,8 @@ class TickSightingsAnalyser:
             print(f"Error loading tick sightings: {e}")
             return pd.DataFrame()
     
-    def load_data(self) -> pd.DataFrame: # load data from excel file and parse dates, expected to return DataFrame
-        self.df = self.fetch_tick_sightings()
+    def _load_data(self) -> pd.DataFrame: # load data from excel file and parse dates, expected to return DataFrame
+        self.df = self._fetch_tick_sightings()
         self.df['date'] = pd.to_datetime(self.df['date'], errors='coerce')
 
         hour = self.df["date"].dt.hour
