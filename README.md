@@ -17,6 +17,10 @@ System should read and normalise dataset from an excel file quickly, changing th
 Language used for backend - Python
 
 To run code: Visual Studio Code Recommended  
+
+## Walkthrough Video Link:
+https://youtu.be/1lg6w5WAfBo
+
 ### Install 
   Check Python version installed  
   >python --version
